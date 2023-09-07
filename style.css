@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Roboto, Poppins;
+}
+body{
+    background-color: #fff;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-ketut-subiyanto-4474030.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.mainHeader{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1.5% 0;
+    border-bottom: .1rem solid #fff;
+    position: sticky;
+    top: 0;
+    /* z-index: 999999999; */
+}
+.social-bar a{
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .89s;
+}
+.social-bar a:hover{
+    color: yellow;
+}
+.headerNav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.headerNav .nav{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.headerNav .button{
+    background-color: transparent;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    /* opacity: 0.7; */
+    font-weight: 500;
+    border: .1rem solid #fff;
+    color: #fff;
+    transition: .89s;
+    /* padding: 3% 5%; */
+    /* margin-left: 30px; */
+}
+.headerNav .button:hover{
+    background-color: #000;
+    /* opacity: 1; */
+    color: #fff;
+}
+.headerNav .active{
+    color: yellow;
+}
+.textContent{
+    width: 75%;
+    margin: 18% auto 0;
+    padding-left: 1rem;
+    border-left: .2rem solid yellow;
+}
+.textContent h1{
+    color: #00f;    
+    font-size: 2rem;
+    font-weight: 700;
+}
+.textContent h1 span{
+    color: #fff;
+    font-weight: 300;
+}
+.textContent p{
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 100;
+    padding-bottom: .5rem;
+}
+.textContent button{
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background-color: yellow;
+    border-radius: 20px;
+    border: .1rem solid yellow;
+}
+.benefits{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+.benefits h1{
+    font-size: 2rem;
+    color: #00f
+}
+.benefitsBox{
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 2rem;
+}
+.benefitsBox i{
+    font-size: 2rem;
+    color: blue;
+    padding: 3rem;
+}
+.items{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.items h4{
+    /* border-bottom: 4px solid yellow; */
+    padding-bottom: .1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.unlock{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("/unlock.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.unlockText{
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-left: .2rem solid yellow;
+    /* padding-left: .2rem; */
+   
+}
+.unlockText h1{
+    color: #ff0;
+    font-size: 2rem;
+    /* text-align: left; */
+    /* display: inline; */
+}
+.unlockText p{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: .3rem 0;
+}
+.unlockText button{
+    color: #000;
+    background-color: yellow;
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: .1rem solid yellow;
+}
+.contactSection{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blue;
+    color: #fff;
+}
+.contactSection h1{
+    font-size: 2rem;
+    font-weight: 500;
+    /* color: #fff; */
+}
+.contactSection p{
+    font-size: 1rem;
+    /* line-height: 40px */
+    padding-bottom: .3rem;
+    /* color: #333; */
+}
+.form{
+    width: 50%;
+    margin: 0 auto;
+}
+.form .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.form p{
+    text-align: center;
+}
+.form .input input{
+    background-color: #eee;
+    outline: 0;
+    border: 0;
+    padding: .3rem;
+    /* width: 50vw; */
+    font-size: 1rem;
+
+}
+.form .input .email{
+    height: 2rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    border: 0;
+}
+.form textarea{
+    height: 30vh;
+    width: 100%;
+    resize: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    border: 0;
+}
+.form .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+}
+.form .buttons a{
+    padding: .3rem .5rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    background-color: yellow;
+    /* padding: 10px 20px; */
+    margin-right: 20px;
+    border-radius: 20px;
+
+}
+.footerContainer{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 0;
+}
+.footerContainer p{
+    padding: 0 .3rem;
+    font-size: .7rem;
+}
+.footerContainer p a{
+    color: yellow;
+}
