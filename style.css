@@ -4,9 +4,12 @@
     outline: none;
     box-sizing: border-box;
     font-family: Roboto, Poppins;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #fff;
+    scroll-behavior: smooth;
+    transition:  scroll-behavior .30s ease;
 }
 .header{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-ketut-subiyanto-4474030.jpg");
@@ -14,17 +17,20 @@ body{
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+    scroll-behavior: smooth;
+    /* transform: background-image scale(1); */
+    border-bottom: .1rem solid #fff;
 }
 .mainHeader{
-    width: 75%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 1.5% 0;
+    padding: 2.5% 12.5%;
     border-bottom: .1rem solid #fff;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     /* z-index: 999999999; */
 }
 .social-bar a{
@@ -60,14 +66,16 @@ body{
     font-weight: 500;
     border: .1rem solid #fff;
     color: #fff;
-    transition: .89s;
+    transition: .50s;
     /* padding: 3% 5%; */
     /* margin-left: 30px; */
+    box-shadow: 0 0 10px #eee;
 }
 .headerNav .button:hover{
     background-color: #000;
     /* opacity: 1; */
-    color: #fff;
+    /* color: #fff; */
+    transform: translateY(-10%);
 }
 .headerNav .active{
     color: yellow;
@@ -75,11 +83,18 @@ body{
 .textContent{
     width: 75%;
     margin: 18% auto 0;
-    padding-left: 1rem;
-    border-left: .2rem solid yellow;
+    padding: 1rem;
+    border-left: .5rem solid #00f;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 20px;
+    animation-name: slideUp;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    transition: all .89s;
 }
 .textContent h1{
-    color: #00f;    
+    color: #fff;    
     font-size: 2rem;
     font-weight: 700;
 }
@@ -93,46 +108,68 @@ body{
     font-style: italic;
     font-weight: 100;
     padding-bottom: .5rem;
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0;
+
 }
 .textContent button{
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     cursor: pointer;
     padding: .5rem 1rem;
-    background-color: yellow;
+    background-color: transparent;
     border-radius: 20px;
-    border: .1rem solid yellow;
+    border: .1rem solid #fff;
+    transition: all .50s;
+    box-shadow: 0 0 10px #eee;
+}
+.textContent button:hover{
+    background-color: #000;
+    transform: translateY(-10%);
 }
 .benefits{
     width: 75%;
     margin: 0 auto;
     text-align: center;
     padding-top: 2rem;
+    /* background-color: transparent; */
 }
 .benefits h1{
     font-size: 2rem;
     color: #00f
 }
 .benefitsBox{
-    height: 30vh;
+    /* height: 30vh; */
+    max-height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 2rem;
+    padding: 20px;
 }
 .benefitsBox i{
     font-size: 2rem;
     color: blue;
-    padding: 3rem;
+    padding: 1rem;
 }
 .items{
     /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    box-shadow: 0 0 10px #ccc;
+    padding: 10px;
+    transition: .20s
+}
+.items:hover{
+    box-shadow: 0 0 20px #ccc;
+    transform: translateY(-10%);
+    transform: scale(1.2 12);
 }
 .items h4{
     /* border-bottom: 4px solid yellow; */
-    padding-bottom: .1rem;
+    padding-bottom: .4rem;
     font-size: 1rem;
     text-transform: uppercase;
 }
@@ -168,13 +205,18 @@ body{
     padding: .3rem 0;
 }
 .unlockText button{
-    color: #000;
-    background-color: yellow;
+    color: #fff;
+    background-color: transparent;
     padding: .3rem .5rem;
     border-radius: .5rem;
     font-size: 1rem;
     cursor: pointer;
-    border: .1rem solid yellow;
+    border: .1rem solid #ffff;
+    box-shadow: 0 0 10px #eee;
+    transition: all .50s;
+}
+.unlockText button:hover{
+    transform: translateY(-10%);
 }
 .contactSection{
     height: 70vh;
@@ -216,6 +258,7 @@ body{
     padding: .3rem;
     /* width: 50vw; */
     font-size: 1rem;
+    box-shadow: 0 0 10px #eee;
 
 }
 .form .input .email{
@@ -233,6 +276,9 @@ body{
     border-radius: .5rem;
     font-size: 1rem;
     border: 0;
+    background-color: #eee;
+    box-shadow: 0 0 10px #eee;
+    scrollbar-arrow-color: #00f;
 }
 .form .buttons{
     display: flex;
@@ -250,7 +296,12 @@ body{
     /* padding: 10px 20px; */
     margin-right: 20px;
     border-radius: 20px;
+    box-shadow: 0 0 10px #eee;
+    transition: .5s;
 
+}
+.form .buttons a:hover{
+    transform: translateY(-10%);
 }
 .footerContainer{
     background-color: #000;
@@ -258,7 +309,7 @@ body{
     align-items: center;
     justify-content: center;
     color: #fff;
-    padding: 10px 0;
+    padding: .7rem 0;
 }
 .footerContainer p{
     padding: 0 .3rem;

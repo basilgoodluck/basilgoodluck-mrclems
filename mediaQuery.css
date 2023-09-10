@@ -1,0 +1,96 @@
+@media screen and (max-width: 800px){
+    .headerNav{
+        height: 100vh;
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* opacity: 0; */
+        display: none;
+        transition: all .5s;
+    }
+    .headerNav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 30px; */
+        flex-direction: column;
+        /* grid-template-columns: repeat(1 1fr); */
+        /* gap: 10PX; */
+        /* text-align: center; */
+        height: 100%;
+        background-color: blue;
+    }
+    .headerNav li{
+        font-size: .8rem;
+        margin-top: 30px;
+    }
+    .headerNav .button{
+        font-size: .8rem;
+        padding: .3rem .8rem;
+    }
+    .benefitsBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .benefits h1{
+        font-size: 1.5rem;
+    }
+    .unlockText{
+        width: 75%;
+    }
+    .form .buttons a{
+        font-size: .8rem;
+    }
+    .servicesMainDisplay{
+        display: flex;
+        flex-direction: column;
+    }
+    .serviceName{
+        width: 100%;
+        
+    }
+    .aboutContainer{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    .projectsContainer .firstRow{
+        flex-direction: column;
+        /* height: 100vh; */
+    }
+    .projectsContainer .projectName{
+        margin-right: 0;
+    }
+    .projectsContainer .projectName:nth-child(2){
+        margin-top: 0;
+    }
+    .projectsContainer .projectName:nth-child(3){
+        margin-top: 0;
+    }
+    .contactSection h1{
+        font-size: 1.5rem;
+    }
+    .contactSection p{
+        font-size: .8rem;
+    }
+    .form{
+        width: 75%;
+    }
+    .footerContainer p{
+        font-size: .6rem;
+    }
+    .servicesContainer h1{
+        font-size: 1.5rem;
+    }
+    .FAQContainer h1{
+        font-size: 1rem;
+    }
+    .aboutContainer img{
+        width: 60vw;
+    }
+    .projectsContainer{
+    width: 75%;}
+}
