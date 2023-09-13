@@ -7,19 +7,13 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
-    scroll-behavior: smooth;
-    transition:  scroll-behavior .30s ease;
+    /* background-color: #fff; */
 }
 .header{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-ketut-subiyanto-4474030.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    scroll-behavior: smooth;
-    /* transform: background-image scale(1); */
-    border-bottom: .1rem solid #fff;
+    padding: 0 0 5%;
 }
 .mainHeader{
     width: 100%;
@@ -27,7 +21,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 2.5% 12.5%;
+    padding: 0 12.5%;
     border-bottom: .1rem solid #fff;
     /* position: sticky; */
     /* top: 0; */
@@ -43,11 +37,21 @@ body{
 .social-bar a:hover{
     color: yellow;
 }
+.headerNav{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding: ; */
+}
 .headerNav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    /* position: relative; */
+}
+.headerNav .fa-bars, .fa-times{
+    display: none;
 }
 .headerNav .nav{
     font-size: 1rem;
@@ -63,7 +67,7 @@ body{
     padding: .5rem 1rem;
     border-radius: .5rem;
     /* opacity: 0.7; */
-    font-weight: 500;
+    font-weight: 300;
     border: .1rem solid #fff;
     color: #fff;
     transition: .50s;
@@ -75,7 +79,10 @@ body{
     background-color: #000;
     /* opacity: 1; */
     /* color: #fff; */
-    transform: translateY(-10%);
+    /* transform: translateY(-10%); */
+}
+.headerNav .button:active{
+    transform: translateY(10%);
 }
 .headerNav .active{
     color: yellow;
@@ -130,14 +137,15 @@ body{
     transform: translateY(-10%);
 }
 .benefits{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 2rem;
-    /* background-color: transparent; */
+    padding: 5% 12.5%;
+    background-color: #000;
 }
 .benefits h1{
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
     color: #00f
 }
 .benefitsBox{
@@ -147,7 +155,8 @@ body{
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 2rem;
-    padding: 20px;
+    padding: 5% 0;
+
 }
 .benefitsBox i{
     font-size: 2rem;
@@ -159,7 +168,9 @@ body{
     /* justify-content: center; */
     /* align-items: center; */
     box-shadow: 0 0 10px #ccc;
-    padding: 10px;
+    padding: 5%;
+    border-radius: 10px;
+    color: #fff;
     transition: .20s
 }
 .items:hover{
@@ -175,7 +186,8 @@ body{
 }
 .unlock{
     background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("/unlock.jpg");
-    height: 80vh;
+    height: 100%;
+    padding: 2% 0;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -188,12 +200,12 @@ body{
     width: 50%;
     margin: 0 auto;
     padding: 0 1rem;
-    border-left: .2rem solid yellow;
+    border-left: .2rem solid white;
     /* padding-left: .2rem; */
    
 }
 .unlockText h1{
-    color: #ff0;
+    color: #fff;
     font-size: 2rem;
     /* text-align: left; */
     /* display: inline; */
@@ -206,26 +218,28 @@ body{
 }
 .unlockText button{
     color: #fff;
-    background-color: transparent;
+    background-color: #00f;
     padding: .3rem .5rem;
     border-radius: .5rem;
     font-size: 1rem;
     cursor: pointer;
-    border: .1rem solid #ffff;
-    box-shadow: 0 0 10px #eee;
+    border: .1rem solid #00f;
+    box-shadow: 0 0 5px #eee;
     transition: all .50s;
 }
 .unlockText button:hover{
     transform: translateY(-10%);
 }
 .contactSection{
-    height: 70vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: blue;
+    background-color: #000;
+    border-bottom: .1rem solid #fff;
     color: #fff;
+    padding: 5% 0;
 }
 .contactSection h1{
     font-size: 2rem;
@@ -258,7 +272,7 @@ body{
     padding: .3rem;
     /* width: 50vw; */
     font-size: 1rem;
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 3px #eee;
 
 }
 .form .input .email{
@@ -277,8 +291,8 @@ body{
     font-size: 1rem;
     border: 0;
     background-color: #eee;
-    box-shadow: 0 0 10px #eee;
-    scrollbar-arrow-color: #00f;
+    box-shadow: 0 0 3px #eee;
+    /* scrollbar-arrow-color: #00f; */
 }
 .form .buttons{
     display: flex;
@@ -287,16 +301,16 @@ body{
     padding: .3rem;
 }
 .form .buttons a{
-    padding: .3rem .5rem;
-    color: #000;
+    padding: 1% 2%;
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    /* text-transform: uppercase; */
-    background-color: yellow;
+    font-size: .8rem;
+    text-transform: uppercase;
+    background-color: blue;
     /* padding: 10px 20px; */
     margin-right: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 3px #eee;
     transition: .5s;
 
 }
