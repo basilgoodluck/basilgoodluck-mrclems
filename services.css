@@ -7,21 +7,22 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
+    background-color: #222;
 }
 .header{
-    /* background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-pixabay-327540.jpg"); */
-    background-size: cover;
+    /* background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-ketut-subiyanto-4474030.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* padding: 0 0 5%; */
     background-color: #000;
-    background-position: center;
 }
 .mainHeader{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 2.5% 12.5%;
+    /* margin: 0 auto; */
+    padding: 2% 12.5%;
     border-bottom: .1rem solid #fff;
     /* position: sticky; */
     /* top: 0; */
@@ -39,6 +40,9 @@ body{
 }
 .headerNav{
     position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 0;
 }
 .headerNav ul{
     display: flex;
@@ -47,7 +51,7 @@ body{
     list-style: none;
     /* position: relative; */
 }
-.headerNav .fa-bars, .fa-times{ 
+.headerNav .fa-bars, .headerNav .fa-times{
     display: none;
 }
 .headerNav .nav{
@@ -67,14 +71,19 @@ body{
     font-weight: 300;
     border: .1rem solid #fff;
     color: #fff;
-    transition: .89s;
+    transition: .50s;
     /* padding: 3% 5%; */
     /* margin-left: 30px; */
+    box-shadow: 0 0 10px #eee;
 }
 .headerNav .button:hover{
     background-color: #000;
     /* opacity: 1; */
     color: #fff;
+    /* transform: translateY(-10%); */
+}
+.headerNav .button:active{
+    transform: translateY(10%);
 }
 .headerNav .active{
     color: yellow;
@@ -99,7 +108,7 @@ body{
 .servicesContainer h1{
     font-size: 1.5rem;
     padding: .5rem .3rem;
-    color: black;
+    color: #fff;
     text-transform: uppercase;
 }
 .serviceName{
@@ -121,9 +130,11 @@ body{
 .serviceName h4{
     font-size: 1rem;
     padding: 0 0 .2rem;
+    color: #fff;
 }
 .serviceName p{
-    font-size: 1rem;
+    font-size: .8rem;
+    color: #fff;
 }
 .FAQContainer{
     background-color: #111;
