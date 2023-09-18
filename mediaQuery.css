@@ -1,6 +1,13 @@
 @media screen and (max-width: 800px){
     .mainHeader{
         padding: 4% 12.5%;
+        /* width: ; */
+    }
+    .textContent{
+        width: 100%;
+    }
+    .textContent p{
+        width: 100%;
     }
     .headerNav ul{
         display: none;
@@ -99,13 +106,16 @@
         width: 80%;
     }
     .contactSection h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .contactSection p{
         font-size: .8rem;
     }
     .form{
         width: 75%;
+    }
+    .form textarea{
+        height: 20vh;
     }
     .footerContainer p{
         font-size: .6rem;

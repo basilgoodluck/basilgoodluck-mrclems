@@ -8,6 +8,7 @@
 }
 body{
     background: #000066;
+    overflow-x: hidden;
 }
 
 .mainHeader{
@@ -277,7 +278,7 @@ form textarea{
     font-size: 1rem;
     border: 0;
     background-color: #eee;
-    box-shadow: 0 0 3px #eee;
+    box-shadow: 0 -2px 3px #eee;
     /* scrollbar-arrow-color: #00f; */
 }
 form .buttons{

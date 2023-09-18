@@ -12,3 +12,11 @@ exit = function(){
   document.getElementById("Menu").style.display = "none";
 }
 
+const toggles = document.querySelectorAll("#faq")
+
+toggles.forEach((toggle)=>{
+  toggle.addEventListener("click", ()=>{
+    toggle.parentNode.classList.toggle("active")
+  })
+})
+

@@ -188,9 +188,10 @@ body{
     position: relative;
     /* margin-right: 5rem; */
     transition: .20s;
-    border: 0;
-    outline: 10px solid #fff;
+    border: 2px solid #fff;
+    outline: 1px solid #00f;
     border-radius: 20px;
+    box-shadow: 0 0 10px #eee;
 }
 .footerContainer{
     background-color: #00001a;
