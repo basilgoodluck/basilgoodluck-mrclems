@@ -1,6 +1,6 @@
 @media screen and (max-width: 800px){
     .mainHeader{
-        padding-top: 6% ;
+        padding: 4% 12.5%;
     }
     .headerNav ul{
         display: none;
@@ -13,13 +13,15 @@
     }
     .headerNav .fa-bars{
         display: block;
-        top: 30px;
-        right: 30px; 
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px; 
     }
     .headerNav ul .fa-times{
+        font-size: 25px;
         display: block;
-        top: 30px;
-        left: 30px;
+        top: 20px;
+        left: 20px;
     }
 
     .headerNav ul{
@@ -54,8 +56,11 @@
     }
     .header .textContent h1{
         font-size: 1.5rem;
-        width: 50vw;
+        width: 80%;
         margin: 0 auto;
+    }
+    .header .textContent p{
+        width: 80%;
     }
     .benefitsBox{
         display: flex;
@@ -84,15 +89,11 @@
     .aboutContainer{
         flex-direction: column;
         justify-content: center;
+        width: 80%;
         /* height: 4; */
     }
-    .projectsContainer .firstRow{
-        flex-direction: column;
-        height: 100%;
-    }
-    .projectsContainer .projectName{
-        width: 60vw;
-        height: 40vh;
+    .textContent p span{
+        font-size: 1.2rem;
     }
     .contactSection form{
         width: 80%;
@@ -117,14 +118,20 @@
     }
     .aboutContainer img{
         width: 60vw;
-    }
-    .projectsContainer{
-    width: 75%;
+        margin-bottom: 15px;
     }
     .projectsContainer .firstRow{
-        grid-template-columns: repeat(1, 1fr);
-        /* flex-direction: column;
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        align-items: center; */
+        flex-direction: column;
+    }
+    .projectsContainer .projectName{
+        width: 100%;
+        height: 40vh;
+    }
+    form .buttons a:nth-child(2){
+        width: 220px;
+        /* padding: .5rem 1rem; */
     }
 }

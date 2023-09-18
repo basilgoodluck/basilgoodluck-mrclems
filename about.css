@@ -18,16 +18,16 @@ body{
     /* padding: 0 0 5%; */
 }
 .mainHeader{
+    background-color: #00001a;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 0 auto; */
     padding: 2% 12.5%;
     border-bottom: .1rem solid #fff;
-    position: relative;
-    /* top: 0; */
-    /* z-index: 999999999; */
+    position: fixed;
+    top: 0;
+    z-index: 8478474;
 }
 .social-bar a{
     margin-right: 1rem;
@@ -91,7 +91,7 @@ body{
 }
 .aboutContainer{
     width: 75%;
-    margin: 5% auto;
+    margin: 18% auto 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -136,8 +136,9 @@ body{
     border-radius: .2rem;
     outline: none;
     border: 0;
-    line-height: 2;
-    /* margin-bottom: 10px; */
+    cursor: text;
+    line-height: 1.5;
+    /* margin: 40px 0; */
     /* margin: 10px 0; */
 }
 .textContent p span{
@@ -172,10 +173,8 @@ body{
 .projectsContainer .firstRow{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
-    width: 55%;
-    /* justify-content: space-between;
-    align-items: center; */
+    gap: 100px;
+    width: 80%;
     height: 100%;
     margin: 5% auto;
 }
@@ -184,24 +183,15 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 20vw;
+    /* width: 40%; */
     height: 20vw;
     position: relative;
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
     transition: .20s;
     border: 0;
-    outline: 10px solid #00001a;
+    outline: 10px solid #fff;
     border-radius: 20px;
 }
-.projectsContainer .projectName:hover{
-    transform: translateY(-5%);
-}
-/* .projectsContainer .projectName:nth-child(2){
-    margin-top: 5rem;
-}
-.projectsContainer .projectName:nth-child(3){
-    margin-top: 10rem;
-} */
 .footerContainer{
     background-color: #00001a;
     display: flex;
