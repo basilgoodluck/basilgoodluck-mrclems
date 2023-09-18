@@ -7,26 +7,17 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #222;
-}
-.header{
-    /* background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-ketut-subiyanto-4474030.jpg"); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* padding: 0 0 5%; */
-    background-color: #000;
+    background-color: #000066;
 }
 .mainHeader{
+    background-color: #00001a;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 0 auto; */
     padding: 2% 12.5%;
     border-bottom: .1rem solid #fff;
-    /* position: sticky; */
-    /* top: 0; */
-    /* z-index: 999999999; */
+    position: relative;
 }
 .social-bar a{
     margin-right: 1rem;
@@ -38,18 +29,11 @@ body{
 .social-bar a:hover{
     color: yellow;
 }
-.headerNav{
-    position: relative;
-    /* width: 100%; */
-    /* height: 100%; */
-    padding: 0;
-}
 .headerNav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    /* position: relative; */
 }
 .headerNav .fa-bars, .headerNav .fa-times{
     display: none;
@@ -63,24 +47,20 @@ body{
     text-transform: uppercase;
 }
 .headerNav .button{
-    background-color: transparent;
-    font-size: 1rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    /* opacity: 0.7; */
-    font-weight: 300;
-    border: .1rem solid #fff;
     color: #fff;
-    transition: .50s;
-    /* padding: 3% 5%; */
-    /* margin-left: 30px; */
-    box-shadow: 0 0 10px #eee;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .7rem 2rem;
+    background-color: #00001a;
+    border-radius: 20px;
+    border: 0;
+    transition: all .50s;
+    box-shadow: 0 0 5px #00f;
+    margin: 10px 15px;
 }
 .headerNav .button:hover{
     background-color: #000;
-    /* opacity: 1; */
-    color: #fff;
-    /* transform: translateY(-10%); */
+    box-shadow: 0 0 5px #000;
 }
 .headerNav .button:active{
     transform: translateY(10%);
@@ -116,8 +96,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; */
-    /* background-color: #222; */
-    padding: .5rem;
+    background-color: #00001a;
+    padding: 1rem;
     color: #000;
     width: 25vw;
     margin: 0 auto;
@@ -133,11 +113,13 @@ body{
     color: #fff;
 }
 .serviceName p{
+    font-size: 200;
     font-size: .8rem;
     color: #fff;
+    line-height: 1.5;
 }
 .FAQContainer{
-    background-color: #111;
+    /* background-color: #111; */
     color: #fff;
     /* height: 50vh; */
     max-height: 100%;
@@ -168,15 +150,16 @@ body{
 
 }
 .questionContainer{
-    background-color: #000;
+    background-color: #00001a;
     /* border: .1rem solid #fff; */
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 1rem;
     margin: .5rem auto;
     border-radius: .5rem;
+    position: relative;
     /* box-shadow: 0 0 10px #eee; */
     /* text-align: center; */
     /* display: grid; */
@@ -186,8 +169,8 @@ body{
     font-size: 1rem;
     font-weight: 400;
     padding: 10px 0 5px;
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    width: 80%;
 }
 .questionContainer h4 i{
     border-radius: 50%;
@@ -202,17 +185,30 @@ body{
     /* width: 20px; */
     /* height: 20px; */
 }
-.questionContainer p{
-    font-weight: 200;
+.questionContainer.active .questionContainer{
+    height: 100%;
+}
+.questionContainer.active .fa-plus{
+    display: none;
+}
+.questionContainer.active .faqanx{
+    display: block;
+}
+.questionContainer h4 .fa-times{
+    display: none;
+}
+.questionContainer .faqanx{
+    font-weight: 100;
+    width: 80%;
     font-size: 1rem;
     padding: .2rem 0;
     /* background-color: #eee; */
     /* border: 2px solid #ccc; */
     /* outline: 1px solid #ddd; */
-    display: none;
+    /* display: none; */
 }
 .footerContainer{
-    background-color: #000;
+    background-color: #00001a;
     display: flex;
     align-items: center;
     justify-content: center;

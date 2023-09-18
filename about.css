@@ -7,10 +7,10 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #eee;
+    background-color: #000066;
 }
 .header{
-    background-color: #000;
+    background-color: #00001a;
     height: 100%;
     /* background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("pexels-ketut-subiyanto-4474030.jpg"); */
     /* background-size: cover; */
@@ -25,7 +25,7 @@ body{
     /* margin: 0 auto; */
     padding: 2% 12.5%;
     border-bottom: .1rem solid #fff;
-    /* position: sticky; */
+    position: relative;
     /* top: 0; */
     /* z-index: 999999999; */
 }
@@ -40,7 +40,7 @@ body{
     color: yellow;
 }
 .headerNav{
-    position: relative;
+    /* position: relative; */
     /* width: 100%; */
     /* height: 100%; */
     /* padding: 0; */
@@ -91,64 +91,70 @@ body{
 }
 .aboutContainer{
     width: 75%;
-    margin: 0 auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    border-bottom: .1rem solid black;
-    padding-bottom: .5rem;
+    /* border-bottom: .1rem solid black; */
+    /* padding-bottom: .5rem; */
     height: 100%;
 
 
 }
 .aboutContainer img{
+    /* border: 2px solid #00001a; */
     width: 20vw;
-    border-radius: 3rem 0 3rem 0;
-    /* height: 100%; */
-    /* width: 100%; */
-    padding: 1rem .5rem 0 0;
+    border-radius: 3rem;
+    /* padding: 1rem .5rem 0 0; */
 
 }
 .textContent{
+    /* margin-top: -30px; */
     padding-left: 1rem;
-    border-left: .2rem solid black;
+    border-left: .2rem solid #fff;
     /* height: 100%; */
+    color: #fff;
 }
 .textContent p{
     font-size: 1rem;
     /* width: 20vw; */
-    font-weight: 100;
-    font-style: italic;
+    line-height: 1.5;
+    font-weight: 200;
+    /* font-style: italic; */
     padding-bottom: .8rem;
     height: 100%;
+
 }
 .textContent a{
     color: #fff;
     font-size: .8rem;
-    background-color: black;
+    background-color: #00001a;
     padding: .4rem;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: .2rem;
     outline: none;
     border: 0;
+    line-height: 2;
+    /* margin-bottom: 10px; */
+    /* margin: 10px 0; */
 }
 .textContent p span{
-    color: #000;
-    font-size: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
     font-weight: 700;
     font-style: normal;
-    color: blue;
     text-transform: uppercase;
 }
 .projectsContainer h1{
-    color: black;
+    color: #fff;
+    margin-top: 20px;
     font-size: 1.5rem;
     text-align: center;
     padding: .5rem 0;
     text-transform: uppercase;
-    /* background-color: #fff; */
+    /* background-color: #00001a; */
     /* display: inline-block; */
     /* border-radius: 50%; */
 }
@@ -156,23 +162,26 @@ body{
     display: inline-block;
     border-radius: 50%;
     padding: .5rem;
+    background-color: #00001a;
 }
 .projectsContainer{
-    width: 55%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
     /* background-color: #000; */
 }
 .projectsContainer .firstRow{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    width: 55%;
     /* justify-content: space-between;
     align-items: center; */
-    /* height: 200px; */
-    margin: 0 auto;
+    height: 100%;
+    margin: 5% auto;
 }
 .projectsContainer .projectName{
     background-image: url("/pexels-pixabay-327540.jpg");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 20vw;
@@ -180,6 +189,9 @@ body{
     position: relative;
     margin-right: 5rem;
     transition: .20s;
+    border: 0;
+    outline: 10px solid #00001a;
+    border-radius: 20px;
 }
 .projectsContainer .projectName:hover{
     transform: translateY(-5%);
@@ -191,7 +203,7 @@ body{
     margin-top: 10rem;
 } */
 .footerContainer{
-    background-color: #000;
+    background-color: #00001a;
     display: flex;
     align-items: center;
     justify-content: center;
