@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 850px){
     .mainHeader{
         padding: 25px 12.5%;
     }
@@ -122,6 +122,7 @@
     }
     .aboutContainer img{
         width: 60vw;
+        margin-top: 20px;
         margin-bottom: 15px;
     }
     .projectsContainer .firstRow{
@@ -136,5 +137,13 @@
     }
     form .buttons a:nth-child(2){
         width: 220px;
+    }
+}
+@media screen and (min-width:700px) and (max-width: 1200px) {
+    .aboutContainer{
+        flex-direction: row;
+    }
+    .aboutContainer img{
+        display: none;
     }
 }

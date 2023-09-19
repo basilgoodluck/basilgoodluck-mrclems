@@ -17,4 +17,14 @@ toggles.forEach((toggle)=>{
   })
 })
 
+const submit = document.getElementById("Submit")
+const Email = document.querySelector(".email")
+const message = document.getElementById("message")
+
+submit.addEventListener("click",()=>{
+  while (Email.value = ""){
+    Email.style.border.color = "red"
+  }
+})
+
 
