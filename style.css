@@ -17,8 +17,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2% 12.5%;
-    border-bottom: .1rem solid #fff;
+    padding: 2.5% 12.5%;
+    box-shadow: 0 2px 4px #00f;
     position: fixed;
     top: 0;
     z-index: 8478474;
@@ -38,7 +38,6 @@ body{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    /* position: relative; */
 }
 .headerNav .fa-bars, .headerNav .fa-times{
     display: none;
@@ -50,6 +49,9 @@ body{
     font-weight: 300;
     margin-left: 1rem;
     text-transform: uppercase;
+}
+.headerNav .nav:hover{
+    color: #ff0;
 }
 .headerNav .button{
     color: #fff;
@@ -71,6 +73,7 @@ body{
     transform: scale(.89);
 }
 .textContent{
+    padding: 5% 0;
     text-align: center;
     margin: 18% auto 0;
     transition: all .89s;
@@ -88,30 +91,30 @@ body{
     color: #fff;
     font-size: 1rem;
     font-style: italic;
-    font-weight: 200;
-    /* padding-bottom: .5rem; */
+    font-weight: 300;
     line-height: 1.5;
     max-width: 60vw;
     margin: 10px auto;
 
 }
-.textContent button{
+.textContent a{
+    text-decoration: none;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    padding: .7rem 2rem;
+    padding: .5rem 1.5rem;
     background-color: #00001a;
     border-radius: 20px;
     border: 0;
     transition: all .50s;
     box-shadow: 0 0 5px #00f;
-    margin: 10px 15px;
+    margin: 0px 15px;
 }
-.textContent button:hover{
+.textContent a:hover{
     background-color: #000;
     box-shadow: 0 0 5px #000;
 }
-.textContent button:active{
+.textContent a:active{
     transform: scale(.89);
 }
 .benefits{
@@ -119,7 +122,6 @@ body{
     margin: 0 auto;
     text-align: center;
     padding: 5% 12.5%;
-    /* background-color: #000; */
 }
 .benefits h1{
     text-transform: uppercase;
@@ -127,7 +129,6 @@ body{
     color: #fff
 }
 .benefitsBox{
-    /* height: 30vh; */
     max-height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -143,9 +144,6 @@ body{
 }
 .items{
     background-color: #00001a;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     box-shadow: 0 0 10px #00f;
     padding: 5%;
     border-radius: 10px;
@@ -154,28 +152,24 @@ body{
 }
 .items:hover{
     box-shadow: 0 0 20px #00f;
-    /* transform: translateY(-10%); */
     transform: scale(1.2);
 }
 .items h4{
-    /* border-bottom: 4px solid yellow; */
     padding-bottom: .4rem;
     font-size: 1rem;
     text-transform: uppercase;
 }
 .items p{
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 300;
     font-style: italic;
 }
 .unlock{
-    /* background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url("/unlock.jpg"); */
     height: 100%;
     padding: 2% 0;
     background-size: cover;
     background-position: center;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -185,15 +179,12 @@ body{
     margin: 0 auto;
     padding: 0 1rem;
     border-left: .2rem solid white;
-    /* padding-left: .2rem; */
    
 }
 .unlockText h1{
     color: #fff;
     font-size: 1.5rem;
     text-transform: uppercase;
-    /* text-align: left; */
-    /* display: inline; */
 }
 .unlockText p{
     color: #fff;
@@ -201,18 +192,19 @@ body{
     line-height: 2rem;
     padding: .3rem 0;
 }
-.unlockText button{
+.unlockText a{
     color: #fff;
     background-color: #00001a;
-    padding: .3rem .5rem;
+    padding: .4rem 1rem;
     border-radius: .5rem;
     font-size: 1rem;
     cursor: pointer;
-    border: .1rem solid #00f;
-    box-shadow: 0 0 5px #eee;
+    border: 0;
+    box-shadow: 0 0 5px #00f;
     transition: .50s;
+    text-decoration: none;
 }
-.unlockText button:active{
+.unlockText a:active{
     transform: scale(.89);
 }
 .contactSection{
@@ -221,7 +213,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: #000; */
     border-bottom: .1rem solid #fff;
     color: #fff;
     padding: 5% 0;
@@ -231,13 +222,10 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 5px;
-    /* color: #fff; */
 }
 .contactSection p{
     font-size: .8rem;
-    /* line-height: 40px */
     padding-bottom: .3rem;
-    /* color: #333; */
 }
 form{
     width: 50%;
@@ -253,33 +241,33 @@ form p{
     text-align: center;
 }
 form .input input{
-    background-color: #eee;
+    background-color: #00001a;
     outline: 0;
     border: 0;
-    padding: .3rem;
-    /* width: 50vw; */
+    padding: 1rem;
     font-size: 1rem;
-    box-shadow: 0 0 3px #eee;
+    box-shadow: 0 0 3px #00f;
 
 }
 form .input .email{
+    color: #fff;
     height: 2rem;
     width: 100%;
     margin-bottom: .5rem;
-    /* border-radius: .5rem; */
     border: 0;
+    border-radius: 10px;
 }
 form textarea{
+    color: #fff;
     height: 30vh;
     width: 100%;
     resize: none;
-    padding: .5rem;
-    /* border-radius: 25px; */
+    padding: 1rem;
     font-size: 1rem;
     border: 0;
-    background-color: #eee;
-    box-shadow: 0 -2px 3px #eee;
-    /* scrollbar-arrow-color: #00f; */
+    background-color: #00001a;
+    box-shadow: 0 -2px 3px #00f;
+    border-radius: 10px;
 }
 form .buttons{
     display: flex;
@@ -288,21 +276,20 @@ form .buttons{
     padding: .3rem;
 }
 form .buttons a{
-    padding: 1rem 2rem;
+    padding: .7rem 1.5rem;
     color: #fff;
     text-decoration: none;
     font-size: .8rem;
     text-transform: uppercase;
     background-color: #00001a;
-    /* padding: 10px 20px; */
     margin-right: 20px;
     border-radius: 20px;
     box-shadow: 0 0 3px #00f;
     transition: .5s;
 
 }
-form .buttons a:hover{
-    transform: translateY(-10%);
+form .buttons a:active{
+    transform: scale(.89);
 }
 .footerContainer{
     background-color: #00001a;

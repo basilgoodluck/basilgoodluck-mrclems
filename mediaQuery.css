@@ -1,7 +1,6 @@
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .mainHeader{
-        padding: 4% 12.5%;
-        /* width: ; */
+        padding: 25px 12.5%;
     }
     .textContent{
         width: 100%;
@@ -14,7 +13,7 @@
     }
     .headerNav .fa-bars,.headerNav ul .fa-times{
         position: absolute;
-        
+        right: 20px;
         color: #fff;
         cursor: pointer;
     }
@@ -22,27 +21,23 @@
         display: block;
         top: 50%;
         transform: translateY(-50%);
-        right: 20px; 
+         
     }
     .headerNav ul .fa-times{
         font-size: 25px;
         display: block;
         top: 20px;
-        left: 20px;
     }
 
     .headerNav ul{
         display: none;
         align-items: center;
         justify-content: center;
-        /* margin-top: 30px; */
         flex-direction: column;
-        /* grid-template-columns: repeat(1 1fr); */
-        /* gap: 10PX; */
         text-align: center;
         height: 100vh;
         width: 100%;
-        background-color: blue;
+        background-color: #00001a;
         position: absolute;
         top: 0;
         left: 0;
@@ -91,13 +86,12 @@
         
     }
     .serviceName p{
-        font-size: .7rem;
+        font-size: 1rem;
     }
     .aboutContainer{
         flex-direction: column;
         justify-content: center;
         width: 80%;
-        /* height: 4; */
     }
     .textContent p span{
         font-size: 1.2rem;
@@ -142,6 +136,5 @@
     }
     form .buttons a:nth-child(2){
         width: 220px;
-        /* padding: .5rem 1rem; */
     }
 }
